@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 33% 99%;
+    --foreground: 220 30% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 30% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 30% 12%;
+
+    --primary: 217 91% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 214 95% 93%;
+    --secondary-foreground: 217 91% 40%;
+
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
+
+    --accent: 210 100% 96%;
+    --accent-foreground: 217 91% 40%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 217 91% 60%;
+
+    --radius: 0.75rem;
+
+    /* Custom tokens */
+    --hero-gradient: linear-gradient(135deg, hsl(210 33% 99%) 0%, hsl(214 95% 96%) 50%, hsl(217 91% 93%) 100%);
+    --card-shadow: 0 1px 3px 0 hsl(220 30% 12% / 0.04), 0 4px 16px 0 hsl(220 30% 12% / 0.06);
+    --card-shadow-hover: 0 4px 12px 0 hsl(220 30% 12% / 0.08), 0 8px 32px 0 hsl(220 30% 12% / 0.1);
+    --glow: 0 0 20px hsl(217 91% 60% / 0.15);
+    --glow-strong: 0 0 40px hsl(217 91% 60% / 0.25);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217 91% 60%;
+  }
+
+  .dark {
+    --background: 222 30% 8%;
+    --foreground: 210 40% 96%;
+
+    --card: 222 28% 12%;
+    --card-foreground: 210 40% 96%;
+
+    --popover: 222 28% 12%;
+    --popover-foreground: 210 40% 96%;
+
+    --primary: 217 91% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 217 40% 18%;
+    --secondary-foreground: 217 91% 75%;
+
+    --muted: 220 20% 16%;
+    --muted-foreground: 215 20% 60%;
+
+    --accent: 217 40% 15%;
+    --accent-foreground: 217 91% 75%;
+
+    --destructive: 0 63% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 20% 18%;
+    --input: 220 20% 18%;
+    --ring: 217 91% 60%;
+
+    --hero-gradient: linear-gradient(135deg, hsl(222 30% 8%) 0%, hsl(217 40% 12%) 50%, hsl(217 40% 15%) 100%);
+    --card-shadow: 0 1px 3px 0 hsl(0 0% 0% / 0.2), 0 4px 16px 0 hsl(0 0% 0% / 0.3);
+    --card-shadow-hover: 0 4px 12px 0 hsl(0 0% 0% / 0.3), 0 8px 32px 0 hsl(0 0% 0% / 0.4);
+    --glow: 0 0 20px hsl(217 91% 60% / 0.2);
+    --glow-strong: 0 0 40px hsl(217 91% 60% / 0.35);
+
+    --sidebar-background: 222 28% 10%;
+    --sidebar-foreground: 210 40% 90%;
+    --sidebar-primary: 210 40% 96%;
+    --sidebar-primary-foreground: 222 28% 10%;
+    --sidebar-accent: 217 40% 15%;
+    --sidebar-accent-foreground: 210 40% 96%;
+    --sidebar-border: 220 20% 18%;
+    --sidebar-ring: 217 91% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .section-container {
+    @apply max-w-6xl mx-auto px-6 md:px-8;
+  }
+
+  .section-padding {
+    @apply py-20 md:py-28;
+  }
+
+  .heading-xl {
+    @apply text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight font-display;
+  }
+
+  .heading-lg {
+    @apply text-3xl md:text-4xl font-bold tracking-tight font-display;
+  }
+
+  .heading-md {
+    @apply text-xl md:text-2xl font-semibold font-display;
+  }
+
+  .text-body {
+    @apply text-base md:text-lg leading-relaxed text-muted-foreground;
+  }
+
+  .card-elevated {
+    @apply bg-card rounded-2xl border border-border;
+    box-shadow: var(--card-shadow);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+
+  .card-elevated:hover {
+    box-shadow: var(--card-shadow-hover);
+    transform: translateY(-2px);
+  }
+
+  .glow-effect {
+    transition: box-shadow 0.3s ease;
+  }
+  .glow-effect:hover {
+    box-shadow: var(--glow);
+  }
+
+  .badge-tech {
+    @apply inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-secondary text-secondary-foreground;
+  }
+
+  .gradient-text {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, hsl(217 91% 50%), hsl(217 91% 70%));
+  }
+}
+
+/* Scroll progress bar */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: linear-gradient(90deg, hsl(217 91% 60%), hsl(200 100% 60%));
+  z-index: 9999;
+  transition: width 0.1s linear;
+}
