@@ -31,7 +31,7 @@ const HeroSection = () => {
   const contentY = useTransform(scrollYProgress, [0, 1], ["0%", "10%"]);
   const orbY = useTransform(scrollYProgress, [0, 1], ["0%", "35%"]);
 
-  const name = "John Developer";
+  const name = "Yash Patoliya";
 
   return (
     <section
@@ -117,21 +117,6 @@ const HeroSection = () => {
       {/* Content */}
       <motion.div className="section-container relative z-10" style={{ y: contentY }}>
         <div className="flex flex-col items-center text-center">
-          {/* Badge */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5, ease: "easeOut" }}
-            className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/20 bg-primary/5 dark:bg-primary/10 mb-8"
-          >
-            <span className="relative flex h-2 w-2">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75" />
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-primary" />
-            </span>
-            <span className="text-xs font-medium text-primary tracking-wider uppercase">
-              Available for work
-            </span>
-          </motion.div>
 
           {/* Name with letter-by-letter animation */}
           <h1 className="heading-xl mb-4 overflow-hidden" style={{ perspective: 400 }}>
@@ -169,8 +154,8 @@ const HeroSection = () => {
                   transition={{ duration: 0.5, delay: 1.2 + i * 0.15 }}
                   className={
                     word === "·"
-                      ? "text-primary text-xl font-bold"
-                      : "text-body text-lg"
+                      ? "text-primary text-2xl font-bold"
+                      : "text-body text-xl"
                   }
                 >
                   {word}

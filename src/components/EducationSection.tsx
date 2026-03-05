@@ -3,17 +3,10 @@ import AnimatedSection from "./AnimatedSection";
 
 const education = [
   {
-    degree: "M.S. Computer Science",
-    school: "Stanford University",
-    years: "2018 – 2020",
-    description: "Specialized in Distributed Systems and Machine Learning.",
-  },
-  {
-    degree: "B.S. Computer Engineering",
-    school: "University of California, Berkeley",
-    years: "2014 – 2018",
-    description: "Dean's List. Focus on Software Engineering and Algorithms.",
-  },
+    degree: "B.tech Computer Science Engineering",
+    school: "Darshan University",
+    years: "2023 – 2027",
+  }
 ];
 
 const EducationSection = () => (

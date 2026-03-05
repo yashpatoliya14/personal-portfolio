@@ -3,33 +3,14 @@ import AnimatedSection from "./AnimatedSection";
 
 const experiences = [
   {
-    company: "Google",
-    role: "Senior Software Engineer",
-    duration: "2022 – Present",
-    achievements: [
-      "Led a team of 5 engineers to build a real-time data pipeline processing 10M+ events/day",
-      "Reduced API latency by 40% through query optimization and caching strategies",
-      "Mentored junior developers and conducted 50+ code reviews",
-    ],
-  },
-  {
-    company: "Stripe",
-    role: "Software Engineer",
-    duration: "2020 – 2022",
-    achievements: [
-      "Built payment orchestration features serving 100K+ merchants",
-      "Designed and implemented microservices architecture for billing platform",
-      "Improved test coverage from 65% to 95% across core services",
-    ],
-  },
-  {
-    company: "Startup Inc.",
+    company: "GamutX",
     role: "Full Stack Developer",
-    duration: "2018 – 2020",
+    duration: "Dec,2025 - March,2026",
     achievements: [
-      "Built MVP from scratch using React, Node.js, and PostgreSQL",
-      "Implemented CI/CD pipelines reducing deployment time by 70%",
-      "Grew user base from 0 to 10K in the first 6 months",
+      "Refactored legacy codebase by removing redundant code, restructuring routes, and resolving unmatched routing issues in Next.js",
+"Enhanced an internal browser bookmark extension with tab-wise categorization and seamless import/export functionality",
+"Developed a global job map visualizer using Leaflet.js with dynamic markers and state-based filtering",
+"Reduced backend API calls by 50–60% using efficient frontend caching with ReactQuery",
     ],
   },
 ];

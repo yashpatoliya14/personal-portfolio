@@ -2,9 +2,9 @@ import AnimatedSection from "./AnimatedSection";
 import profilePhoto from "@/assets/profile-photo.jpg";
 
 const highlights = [
-  { emoji: "🧠", text: "Problem solver with a passion for clean architecture" },
-  { emoji: "💻", text: "5+ years building production-grade applications" },
-  { emoji: "🚀", text: "Shipped products used by thousands of users" },
+  {  text: "Problem solver with a passion for clean architecture" },
+  // {  text: "" },
+  {  text: "Shipped products used by thousands of users" },
 ];
 
 const AboutSection = () => (

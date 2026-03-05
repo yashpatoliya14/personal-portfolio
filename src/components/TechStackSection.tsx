@@ -3,28 +3,20 @@ import AnimatedSection from "./AnimatedSection";
 const categories = [
   {
     name: "Frontend",
-    tools: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
+    tools: ["React", "Next.js", "TypeScript", "Tailwind CSS", "JavaScript"],
   },
   {
     name: "Backend",
-    tools: ["Node.js", "Python", "FastAPI", "GraphQL", "REST APIs"],
+    tools: ["Node.js", "Python", "FastAPI", "Nest.JS", "REST APIs"],
   },
   {
     name: "Database",
-    tools: ["PostgreSQL", "MongoDB", "Redis", "Prisma", "Supabase"],
+    tools: ["MongoDB", "MS SQL"],
   },
   {
-    name: "DevOps",
-    tools: ["Docker", "AWS", "CI/CD", "Kubernetes", "Terraform"],
-  },
-  {
-    name: "Trading Bots",
-    tools: ["Pine Script", "Backtrader", "ccxt", "Binance API"],
-  },
-  {
-    name: "AI Tools",
-    tools: ["OpenAI", "LangChain", "Hugging Face", "TensorFlow"],
-  },
+    name: "Tools",
+    tools: ["Supabase", "Firebase", "Cloudinary","Notion"],
+  }
 ];
 
 const TechStackSection = () => (
