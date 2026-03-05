@@ -1,13 +1,25 @@
 import { useState, FormEvent } from "react";
 import { Mail, Send } from "lucide-react";
 import AnimatedSection from "./AnimatedSection";
-
+import emailjs from "emailjs-com";
 const ContactSection = () => {
   const [sent, setSent] = useState(false);
-
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
     setSent(true);
+    emailjs.send(
+      "service_0gkv71b",
+      "template_psba5wm",
+      {
+        name: name,
+        email: email,
+        message: message
+      },
+      "aicloPQzMzZNFHAK5"
+    );
   };
 
   return (
@@ -42,6 +54,8 @@ const ContactSection = () => {
                   id="name"
                   type="text"
                   required
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
                   className="w-full px-4 py-3 rounded-xl border border-border bg-background text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-primary/30 transition"
                   placeholder="Your name"
                 />
@@ -54,6 +68,8 @@ const ContactSection = () => {
                   id="email"
                   type="email"
                   required
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                   className="w-full px-4 py-3 rounded-xl border border-border bg-background text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-primary/30 transition"
                   placeholder="you@example.com"
                 />
@@ -65,6 +81,8 @@ const ContactSection = () => {
                 <textarea
                   id="message"
                   required
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
                   rows={4}
                   className="w-full px-4 py-3 rounded-xl border border-border bg-background text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-primary/30 transition resize-none"
                   placeholder="Your message..."
@@ -73,6 +91,7 @@ const ContactSection = () => {
               <button
                 type="submit"
                 className="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-primary text-primary-foreground font-semibold text-sm hover:shadow-lg transition-all hover:scale-[1.02]"
+
               >
                 <Send size={16} /> Send Message
               </button>

@@ -11,7 +11,7 @@ const projects = [
     image: project2,
     tags: ["ReactJS", "NodeJS", "MongoDB", "Tailwind", "Cloudinary",],
     demo: "https://adaaecommerce-1.onrender.com/",
-    github: "https://github.com/yashpatoliya14/Adaa-Ecommerce/blob/main/README.md",
+    github: "https://github.com/yashpatoliya14/Adaa-Ecommerce",
   },
   {
     title: "Cric Live",
@@ -35,7 +35,7 @@ const projects = [
     image: project3,
     tags: ["Python", "FastAPI", "Scikit Learn", "React", "Numpy", "Pandas"],
     demo: "https://ai-cardio-analyser-1.onrender.com/",
-    github: "https://github.com/yashpatoliya14/AI-Cardio-Analyser",
+    github: "https://github.com/yashpatoliya14/system-request-ms.git",
   },
   {
     title: "AI Pothole Detection System",

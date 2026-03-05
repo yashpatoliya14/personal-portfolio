@@ -1,0 +1,10 @@
+name: Keep Alive
+on:
+  schedule:
+    - cron: "*/15 * * * *"  # every 15 minutes
+jobs:
+  keep-alive:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping my site
+        run: curl -I https://yashpatoliya.github.io/personal-portfolio/
