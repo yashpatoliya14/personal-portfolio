@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Sparkles, Rocket, BookOpen, Users, Download } from "lucide-react";
 import AnimatedSection from "./AnimatedSection";
-import profilePhoto from "@/assets/profile-photo.jpg";
+import profilePhoto from "@/assets/profile-image.jpeg";
 
 const highlights = [
   {

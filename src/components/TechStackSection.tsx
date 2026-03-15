@@ -11,12 +11,20 @@ const categories = [
   },
   {
     name: "Database",
-    tools: ["MongoDB", "MS SQL"],
+    tools: ["MongoDB", "MS SQL","PostgreSQL"],
   },
   {
     name: "Tools",
     tools: ["Supabase", "Firebase", "Cloudinary","Notion"],
-  }
+  },
+  {
+    name:"ML/DL",
+    tools:["NumPy","Pandas","Scikit-learn","Pytorch"]
+  },
+  {
+    name:"Programming",
+    tools:["Python","Java","JavaScript","C"]
+  },
 ];
 
 const TechStackSection = () => (

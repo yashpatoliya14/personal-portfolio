@@ -6,6 +6,14 @@ import project3 from "@/assets/project-3.jpg";
 
 const projects = [
   {
+    title: "Service Management System",
+    description: "A web application for managing service requests and appointments. Built with Next.js, Tailwind CSS, and Prisma.",
+    image: project3,
+    tags: ["Next.js", "Tailwind CSS", "Prisma",  "Supabase"],
+    demo: "https://system-request-ms.vercel.app",
+    github: "https://github.com/yashpatoliya14/system-request-ms.git",
+  },
+  {
     title: "Adaa Ecommerce",
     description: "Full-featured online marketplace with payment processing, inventory management, and admin dashboard.",
     image: project2,
@@ -15,35 +23,26 @@ const projects = [
   },
   {
     title: "Cric Live",
-    description: "Real-time analytics platform with interactive charts, custom reporting, and data export capabilities.",
+    description: "A real-time cricket score app with live updates, player statistics, and team profiles.",
     image: project1,
     tags: ["Flutter", "Firebase", "GetX", "Sqflite"],
-    demo: "#",
+    // demo: "#",
     github: "https://github.com/yashpatoliya14/cric_live",
   },
   {
     title: "AI Cardio Analyser",
-    description: "Intelligent chatbot powered by LLMs with document Q&A, context memory, and multi-language support.",
+    description: "A clinical decision support tool for cardiovascular risk stratification. Leveraging machine learning to analyze patient vitals and lifestyle biomarkers with high predictive value.",
     image: project3,
     tags: ["Python", "FastAPI", "Scikit Learn", "React", "Numpy", "Pandas"],
     demo: "https://ai-cardio-analyser-1.onrender.com/",
     github: "https://github.com/yashpatoliya14/AI-Cardio-Analyser",
   },
   {
-    title: "Service Management System",
-    description: "Intelligent chatbot powered by LLMs with document Q&A, context memory, and multi-language support.",
+    title: "AI Driving Plate Recognition System",
+    description: "",
     image: project3,
     tags: ["Python", "FastAPI", "Scikit Learn", "React", "Numpy", "Pandas"],
-    demo: "https://ai-cardio-analyser-1.onrender.com/",
-    github: "https://github.com/yashpatoliya14/system-request-ms.git",
-  },
-  {
-    title: "AI Pothole Detection System",
-    description: "Intelligent chatbot powered by LLMs with document Q&A, context memory, and multi-language support.",
-    image: project3,
-    tags: ["Python", "FastAPI", "Scikit Learn", "React", "Numpy", "Pandas"],
-    demo: "https://ai-cardio-analyser-1.onrender.com/",
-    github: "https://github.com/yashpatoliya14/AI-Cardio-Analyser",
+    badge: "Working",
   },
 ];
 
@@ -75,19 +74,30 @@ const ProjectsSection = () => (
                     <span key={t} className="badge-tech">{t}</span>
                   ))}
                 </div>
-                <div className="flex gap-3">
-                  <a
-                    href={p.demo}
-                    className="inline-flex items-center gap-2 text-sm font-medium text-primary hover:underline"
-                  >
-                    <ExternalLink size={14} /> Live Demo
-                  </a>
-                  <a
-                    href={p.github}
-                    className="inline-flex items-center gap-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
-                  >
-                    <Github size={14} /> Code
-                  </a>
+                <div className="flex gap-3 items-center">
+                  {(p as any).badge && (
+                    <span className="inline-flex items-center text-xs font-semibold px-2.5 py-0.5 rounded-full bg-primary/10 text-primary">
+                      {(p as any).badge}
+                    </span>
+                  )}
+                  {(p as any).demo && (
+                    <a
+                      href={(p as any).demo}
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 text-sm font-medium text-primary hover:underline"
+                    >
+                      <ExternalLink size={14} /> Live Demo
+                    </a>
+                  )}
+                  {(p as any).github && (
+                    <a
+                      href={(p as any).github}
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+                    >
+                      <Github size={14} /> Code
+                    </a>
+                  )}
                 </div>
               </div>
             </div>
