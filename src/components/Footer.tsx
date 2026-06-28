@@ -11,7 +11,7 @@ const Footer = () => (
   <footer className="border-t border-border bg-background">
     <div className="section-container py-10 flex flex-col md:flex-row items-center justify-between gap-6">
       <p className="text-sm text-muted-foreground">
-        © {new Date().getFullYear()} John Developer. All rights reserved.
+        © {new Date().getFullYear()} Yash Patoliya. All rights reserved.
       </p>
       <div className="flex items-center gap-4">
         {socials.map((s) => (

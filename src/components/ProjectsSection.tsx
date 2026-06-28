@@ -41,8 +41,9 @@ const projects = [
     title: "AI Driving Plate Recognition System",
     description: "",
     image: project3,
-    tags: ["Python", "FastAPI", "Scikit Learn", "React", "Numpy", "Pandas"],
-    badge: "Working",
+    tags: ["PyTorch", "FastAPI", "Scikit Learn", "React", "OpenCV"],
+    demo: "https://ai-licence-plate-detection-1.onrender.com",
+    github: "https://github.com/yashpatoliya14/AI-Licence-Plate-Detection.git",
   },
 ];
 

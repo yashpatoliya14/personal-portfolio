@@ -7,7 +7,7 @@ const categories = [
   },
   {
     name: "Backend",
-    tools: ["Node.js", "Python", "FastAPI", "Nest.JS", "REST APIs"],
+    tools: ["Express.Js", "Python", "FastAPI", "Nest.JS", "REST APIs"],
   },
   {
     name: "Database",

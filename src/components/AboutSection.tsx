@@ -66,16 +66,6 @@ const AboutSection = () => (
             AI-powered cardio analyzer — I bring the same obsession for quality to everything I
             ship.
           </p>
-          <p className="text-body mb-8">
-            Most recently, I interned as a{" "}
-            <span className="text-foreground font-medium">Full Stack Developer at GamutX</span>,
-            where I refactored legacy Next.js codebases, built a global job-map visualizer with
-            Leaflet.js, and slashed backend API calls by 50–60% with React Query caching. I'm
-            always exploring new tech — from <span className="text-primary font-medium">React</span>{" "}
-            &amp; <span className="text-primary font-medium">Next.js</span> to{" "}
-            <span className="text-primary font-medium">Python</span> &amp;{" "}
-            <span className="text-primary font-medium">FastAPI</span>.
-          </p>
 
           {/* Download Resume CTA */}
           <a
