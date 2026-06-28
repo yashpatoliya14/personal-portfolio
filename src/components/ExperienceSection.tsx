@@ -3,6 +3,13 @@ import AnimatedSection from "./AnimatedSection";
 
 const experiences = [
   {
+    company: "Kevit.io",
+    role: "Software Engineer",
+    duration: "Present",
+    achievements: [
+      ],
+  },
+  {
     company: "GamutX",
     role: "Full Stack Developer",
     duration: "Dec,2025 - March,2026",
