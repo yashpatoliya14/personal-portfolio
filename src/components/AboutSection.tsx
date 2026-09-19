@@ -69,7 +69,7 @@ const AboutSection = () => (
 
           {/* Download Resume CTA */}
           <a
-            href="/YashWebDevResume.pdf"
+            href="/YASH_RESUME.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="group inline-flex items-center gap-2 px-6 py-3 rounded-full bg-primary text-primary-foreground font-semibold text-sm transition-all hover:scale-105 hover:shadow-lg mb-2"

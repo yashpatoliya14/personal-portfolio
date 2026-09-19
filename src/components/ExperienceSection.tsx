@@ -7,7 +7,10 @@ const experiences = [
     role: "Software Engineer",
     duration: "Present",
     achievements: [
-      ],
+      "Currently working as a Software Engineer at Kevit, gaining hands-on experience in full-stack web development.",
+      "Working with mentors to strengthen my knowledge of the MERN stack, including MongoDB, Express.js, React.js, Nest.js and Node.js.",
+      "Developing practical skills in building web applications, implementing features, debugging issues, working with APIs, and following professional software development practices."
+    ],
   },
   {
     company: "GamutX",
